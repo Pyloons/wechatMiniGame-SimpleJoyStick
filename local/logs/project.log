@@ -1,0 +1,420 @@
+2018-02-25T01:48:13.951Z - normal: Load ~/.CocosCreator/settings.json
+2018-02-25T01:48:13.951Z - normal: checking language setting...
+2018-02-25T01:48:13.951Z - normal: Language: zh
+2018-02-25T01:48:23.434Z - success: protocol editor-framework registered
+2018-02-25T01:48:23.434Z - success: protocol app registered
+2018-02-25T01:48:23.434Z - success: protocol theme registered
+2018-02-25T01:48:23.434Z - success: protocol packages registered
+2018-02-25T01:48:23.434Z - success: protocol unpack registerred
+2018-02-25T01:48:23.434Z - success: protocol disable-commonjs registerred
+2018-02-25T01:48:23.672Z - normal: connected!
+2018-02-25T01:48:23.672Z - normal: Check project E:\start_project\start_project
+2018-02-25T01:48:23.688Z - normal: Initializing Cocos2d
+2018-02-25T01:48:25.834Z - normal: Initializing Asset Database
+2018-02-25T01:48:26.052Z - success: protocol uuid registerred
+2018-02-25T01:48:26.052Z - success: protocol db registerred
+2018-02-25T01:48:26.052Z - success: protocol thumbnail registerred
+2018-02-25T01:48:26.052Z - normal: Loading editor/builtin packages
+2018-02-25T01:48:26.209Z - success: anysdk loaded
+2018-02-25T01:48:26.521Z - success: assets loaded
+2018-02-25T01:48:26.521Z - success: builder loaded
+2018-02-25T01:48:26.537Z - success: cocos-analytics loaded
+2018-02-25T01:48:26.552Z - success: console loaded
+2018-02-25T01:48:26.599Z - success: hierarchy loaded
+2018-02-25T01:48:26.599Z - success: inspector loaded
+2018-02-25T01:48:26.599Z - success: keystore loaded
+2018-02-25T01:48:26.615Z - success: node-library loaded
+2018-02-25T01:48:26.615Z - success: package-asset loaded
+2018-02-25T01:48:26.615Z - success: preferences loaded
+2018-02-25T01:48:26.615Z - success: project-exporter loaded
+2018-02-25T01:48:26.646Z - success: project-importer loaded
+2018-02-25T01:48:26.646Z - success: project-settings loaded
+2018-02-25T01:48:26.646Z - success: ui-kit loaded
+2018-02-25T01:48:26.662Z - success: ui-grid loaded
+2018-02-25T01:48:26.677Z - success: scene loaded
+2018-02-25T01:48:26.677Z - success: sprite-editor loaded
+2018-02-25T01:48:26.677Z - success: store loaded
+2018-02-25T01:48:26.677Z - success: timeline loaded
+2018-02-25T01:48:26.677Z - normal: Loading builtin packages
+2018-02-25T01:48:26.709Z - success: asset-db-debugger loaded
+2018-02-25T01:48:26.709Z - success: code-editor loaded
+2018-02-25T01:48:26.724Z - success: color-picker loaded
+2018-02-25T01:48:26.724Z - success: package-manager loaded
+2018-02-25T01:48:26.755Z - success: sdkbox loaded
+2018-02-25T01:48:26.755Z - success: tester loaded
+2018-02-25T01:48:26.755Z - success: ui-kit-preview-extra loaded
+2018-02-25T01:48:26.755Z - success: ui-kit-preview loaded
+2018-02-25T01:48:26.771Z - success: ui-tree loaded
+2018-02-25T01:48:30.256Z - normal: Initializing project E:\start_project\start_project
+2018-02-25T01:48:30.256Z - normal: Loading packages
+2018-02-25T01:48:30.271Z - normal: Watching packages
+2018-02-25T01:48:30.427Z - normal: Run Application
+2018-02-25T01:48:43.796Z - success: preview server running at http://localhost:7456
+2018-02-25T01:49:06.778Z - normal: 1.8.1
+2018-02-25T03:59:25.123Z - warn: The 'type' attribute of 'Game.controller' is undefined when loading script
+2018-02-25T03:59:33.580Z - warn: The 'type' attribute of 'Game.controller' is undefined when loading script
+2018-02-25T04:37:27.244Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\start_project\\start_project\\build",
+  "debug": false,
+  "dest": "E:\\start_project\\start_project\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "1",
+  "scenes": [
+    "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a"
+  ],
+  "sourceMaps": false,
+  "startScene": "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a",
+  "template": "link",
+  "title": "start_project",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wxb9ba19d19280bbf9",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "a755660b-b033-45",
+  "zipCompressJs": true,
+  "project": "E:\\start_project\\start_project",
+  "projectName": "start_project",
+  "debugBuildWorker": false
+}
+2018-02-25T04:37:27.249Z - normal: Building E:\start_project\start_project
+2018-02-25T04:37:27.249Z - normal: Destination E:\start_project\start_project\build\wechatgame
+2018-02-25T04:37:28.395Z - normal: Delete E:\start_project\start_project\build\wechatgame\**\*
+2018-02-25T04:37:33.255Z - normal: Compiled project javascript file successfully
+2018-02-25T04:37:33.256Z - normal: Start building assets
+2018-02-25T04:37:33.256Z - normal: Start spawn build-worker
+2018-02-25T04:37:34.886Z - normal: Finish spawn build-worker
+2018-02-25T04:37:34.887Z - normal: Start init build-worker
+2018-02-25T04:37:39.227Z - normal: 1.8.1
+2018-02-25T04:37:39.346Z - normal: Finish init build-worker
+2018-02-25T04:37:39.346Z - normal: Start build-assets in worker
+2018-02-25T04:37:39.984Z - normal: Finish build-assets in worker
+2018-02-25T04:37:40.001Z - normal: Finish building assets
+2018-02-25T04:37:40.034Z - normal: Start building raw assets
+2018-02-25T04:37:40.036Z - normal: Start building plugin scripts
+2018-02-25T04:37:40.113Z - normal: Finish building raw assets
+2018-02-25T04:37:40.196Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-02-25T04:37:40.511Z - normal: Built to "E:\start_project\start_project\build\wechatgame" successfully
+2018-02-25T05:03:35.902Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (D:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-02-25T05:03:42.339Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\start_project\\start_project\\build",
+  "debug": false,
+  "dest": "E:\\start_project\\start_project\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "1",
+  "scenes": [
+    "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a"
+  ],
+  "sourceMaps": false,
+  "startScene": "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a",
+  "template": "link",
+  "title": "start_project",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wxb9ba19d19280bbf9",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "a755660b-b033-45",
+  "zipCompressJs": true,
+  "project": "E:\\start_project\\start_project",
+  "projectName": "start_project",
+  "debugBuildWorker": false
+}
+2018-02-25T05:03:42.342Z - normal: Building E:\start_project\start_project
+2018-02-25T05:03:42.342Z - normal: Destination E:\start_project\start_project\build\wechatgame
+2018-02-25T05:03:42.344Z - normal: Delete E:\start_project\start_project\build\wechatgame\**\*
+2018-02-25T05:03:54.999Z - normal: Compiled project javascript file successfully
+2018-02-25T05:03:55.000Z - normal: Start building assets
+2018-02-25T05:03:55.000Z - normal: Start spawn build-worker
+2018-02-25T05:03:57.858Z - normal: Finish spawn build-worker
+2018-02-25T05:03:57.858Z - normal: Start init build-worker
+2018-02-25T05:04:06.874Z - normal: 1.8.1
+2018-02-25T05:04:07.008Z - normal: Finish init build-worker
+2018-02-25T05:04:07.008Z - normal: Start build-assets in worker
+2018-02-25T05:04:07.874Z - normal: Finish build-assets in worker
+2018-02-25T05:04:07.902Z - normal: Finish building assets
+2018-02-25T05:04:07.989Z - normal: Start building raw assets
+2018-02-25T05:04:07.992Z - normal: Start building plugin scripts
+2018-02-25T05:04:08.090Z - normal: Finish building raw assets
+2018-02-25T05:04:08.167Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-02-25T05:04:08.638Z - normal: Built to "E:\start_project\start_project\build\wechatgame" successfully
+2018-02-25T05:05:50.181Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\start_project\\start_project\\build",
+  "debug": false,
+  "dest": "E:\\start_project\\start_project\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "1",
+  "scenes": [
+    "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a"
+  ],
+  "sourceMaps": false,
+  "startScene": "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a",
+  "template": "link",
+  "title": "start_project",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wxb9ba19d19280bbf9",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "a755660b-b033-45",
+  "zipCompressJs": true,
+  "project": "E:\\start_project\\start_project",
+  "projectName": "start_project",
+  "debugBuildWorker": false
+}
+2018-02-25T05:05:50.187Z - normal: Building E:\start_project\start_project
+2018-02-25T05:05:50.188Z - normal: Destination E:\start_project\start_project\build\wechatgame
+2018-02-25T05:05:50.189Z - normal: Delete E:\start_project\start_project\build\wechatgame\**\*
+2018-02-25T05:05:58.377Z - normal: Compiled project javascript file successfully
+2018-02-25T05:05:58.377Z - normal: Start building assets
+2018-02-25T05:05:58.377Z - normal: Start spawn build-worker
+2018-02-25T05:06:02.268Z - normal: Finish spawn build-worker
+2018-02-25T05:06:02.268Z - normal: Start init build-worker
+2018-02-25T05:06:07.949Z - normal: 1.8.1
+2018-02-25T05:06:08.051Z - normal: Finish init build-worker
+2018-02-25T05:06:08.051Z - normal: Start build-assets in worker
+2018-02-25T05:06:08.520Z - normal: Finish build-assets in worker
+2018-02-25T05:06:08.534Z - normal: Finish building assets
+2018-02-25T05:06:08.553Z - normal: Start building raw assets
+2018-02-25T05:06:08.554Z - normal: Start building plugin scripts
+2018-02-25T05:06:08.634Z - normal: Finish building raw assets
+2018-02-25T05:06:08.641Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-02-25T05:06:08.942Z - normal: Built to "E:\start_project\start_project\build\wechatgame" successfully
+2018-02-25T05:07:49.553Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\start_project\\start_project\\build",
+  "debug": false,
+  "dest": "E:\\start_project\\start_project\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "1",
+  "scenes": [
+    "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a"
+  ],
+  "sourceMaps": false,
+  "startScene": "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a",
+  "template": "link",
+  "title": "start_project",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wxb9ba19d19280bbf9",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "a755660b-b033-45",
+  "zipCompressJs": true,
+  "project": "E:\\start_project\\start_project",
+  "projectName": "start_project",
+  "debugBuildWorker": false
+}
+2018-02-25T05:07:49.558Z - normal: Building E:\start_project\start_project
+2018-02-25T05:07:49.559Z - normal: Destination E:\start_project\start_project\build\wechatgame
+2018-02-25T05:07:49.562Z - normal: Delete E:\start_project\start_project\build\wechatgame\**\*
+2018-02-25T05:07:54.266Z - normal: Compiled project javascript file successfully
+2018-02-25T05:07:54.266Z - normal: Start building assets
+2018-02-25T05:07:54.267Z - normal: Start spawn build-worker
+2018-02-25T05:07:56.315Z - normal: Finish spawn build-worker
+2018-02-25T05:07:56.315Z - normal: Start init build-worker
+2018-02-25T05:08:00.412Z - normal: 1.8.1
+2018-02-25T05:08:00.508Z - normal: Finish init build-worker
+2018-02-25T05:08:00.509Z - normal: Start build-assets in worker
+2018-02-25T05:08:00.992Z - normal: Finish build-assets in worker
+2018-02-25T05:08:01.008Z - normal: Finish building assets
+2018-02-25T05:08:01.034Z - normal: Start building raw assets
+2018-02-25T05:08:01.035Z - normal: Start building plugin scripts
+2018-02-25T05:08:01.117Z - normal: Finish building raw assets
+2018-02-25T05:08:01.125Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-02-25T05:08:01.413Z - normal: Built to "E:\start_project\start_project\build\wechatgame" successfully
+2018-02-25T06:21:43.272Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\start_project\\start_project\\build",
+  "debug": false,
+  "dest": "E:\\start_project\\start_project\\build\\wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "1",
+  "scenes": [
+    "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a"
+  ],
+  "sourceMaps": false,
+  "startScene": "dbbbf2a4-d9fc-4ac2-8410-68c630486f5a",
+  "template": "link",
+  "title": "start_project",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "wxb9ba19d19280bbf9",
+    "orientation": "landscape"
+  },
+  "xxteaKey": "a755660b-b033-45",
+  "zipCompressJs": true,
+  "project": "E:\\start_project\\start_project",
+  "projectName": "start_project",
+  "debugBuildWorker": false
+}
+2018-02-25T06:21:43.278Z - normal: Building E:\start_project\start_project
+2018-02-25T06:21:43.279Z - normal: Destination E:\start_project\start_project\build\wechatgame
+2018-02-25T06:21:43.280Z - normal: Delete E:\start_project\start_project\build\wechatgame\**\*
+2018-02-25T06:21:50.077Z - normal: Compiled project javascript file successfully
+2018-02-25T06:21:50.078Z - normal: Start building assets
+2018-02-25T06:21:50.078Z - normal: Start spawn build-worker
+2018-02-25T06:21:52.614Z - normal: Finish spawn build-worker
+2018-02-25T06:21:52.615Z - normal: Start init build-worker
+2018-02-25T06:21:57.589Z - normal: 1.8.1
+2018-02-25T06:21:57.708Z - normal: Finish init build-worker
+2018-02-25T06:21:57.709Z - normal: Start build-assets in worker
+2018-02-25T06:21:58.325Z - normal: Finish build-assets in worker
+2018-02-25T06:21:58.342Z - normal: Finish building assets
+2018-02-25T06:21:58.384Z - normal: Start building raw assets
+2018-02-25T06:21:58.385Z - normal: Start building plugin scripts
+2018-02-25T06:21:58.491Z - normal: Finish building raw assets
+2018-02-25T06:21:58.497Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-02-25T06:21:58.873Z - normal: Built to "E:\start_project\start_project\build\wechatgame" successfully
