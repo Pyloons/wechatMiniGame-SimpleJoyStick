@@ -44,6 +44,16 @@ cc.Class({
         scoreAudio: {
             default: null,
             url: cc.AudioClip
+        },
+
+        restartButton: {
+            default: null,
+            type: cc.Node
+        },
+
+        progressBar: {
+            default: null,
+            type: cc.ProgressBar
         }
     },
 
@@ -56,10 +66,16 @@ cc.Class({
         this.starDuration = 0;
 
         this.player.getComponent('Player').game = this;
-
         this.spawnNewStar();
 
         this.score = 0;
+        this.restartButton.setPosition(-4000, 0);
+
+        this.progressBar.totalLength = cc.director._winSizeInPoints.width;
+        cc.director.resume();
+    },
+    restartNow: function restartNow() {
+        cc.director.loadScene('game');
     },
 
 
@@ -94,12 +110,13 @@ cc.Class({
     gainScore: function gainScore() {
         this.score += 1;
         this.scoreDisplay.string = 'Score: ' + this.score.toString();
-        cc.audioEngine.play(this.scoreAudio, false);
+        cc.audioEngine.play(this.scoreAudio, false, 0.3);
     },
 
     gameOver: function gameOver() {
         this.player.stopAllActions();
-        cc.director.loadScene('game');
+        this.restartButton.setPosition(0, 0);
+        cc.director.pause();
     }
 });
 

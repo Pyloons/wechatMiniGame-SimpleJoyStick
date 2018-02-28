@@ -4,16 +4,6 @@ cc._RF.push(module, 'ed047WLG2hBQqS5U5CNp17T', 'Player');
 
 'use strict';
 
-// Learn cc.Class:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
-// Learn Attribute:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-
 cc.Class({
     extends: cc.Component,
 
@@ -43,7 +33,10 @@ cc.Class({
         var jumpUp = cc.moveBy(this.jumpDuration, deltaPosUp).easing(cc.easeCubicActionOut());
         var jumpDown = cc.moveBy(this.jumpDuration, deltaPosDown).easing(cc.easeCubicActionIn());
         var callback = cc.callFunc(this.playJumpSound, this);
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
+        var jumpUpForm = cc.scaleTo(0.03, 1, 1.1);
+        var jumpDownForm = cc.scaleTo(0.04, 1, 0.9);
+        var normalForm = cc.scaleTo(0.03, 1, 1);
+        return cc.repeatForever(cc.sequence(jumpUp, jumpUpForm, normalForm, jumpDownForm, jumpDown, jumpDownForm, normalForm, jumpUpForm, callback));
     },
 
     playJumpSound: function playJumpSound() {
@@ -51,38 +44,9 @@ cc.Class({
     },
 
     setInputControl: function setInputControl() {
-        var self = this; // es5的通病，希望cc能早日全面支持es6
-        // 键盘监听
-        // cc.eventManager.addListener({
-        //     event: cc.EventListener.KEYBOARD,
-
-        //     onKeyPressed: function (keyCode, event) {
-        //         switch (keyCode) {
-        //             case cc.KEY.a:
-        //                 self.accLeft = true;
-        //                 self.accRight = false;
-        //                 break;
-        //             case cc.KEY.d:
-        //                 self.accLeft = false;
-        //                 self.accRight = true;
-        //                 break;
-        //         }
-        //     },
-
-        //     onKeyReleased: function (keyCode, event) {
-        //         switch (keyCode) {
-        //             case cc.KEY.a:
-        //                 self.accLeft = false;
-        //                 break;
-        //             case cc.KEY.d:
-        //                 self.accRight = false;
-        //                 break;
-        //         }
-        //     }
-        // }, self.node);
+        var self = this;
 
         this.joyStick.on('VirtualStick', function (event) {
-            // console.log(event.detail.moveVector.x);
             if (event.detail.moveVector.x < 0) {
                 self.accLeft = true;
                 self.accRight = false;
@@ -107,11 +71,24 @@ cc.Class({
         this.xSpeed = 0;
 
         this.setInputControl();
+
+        //试验碰撞
+        cc.director.getCollisionManager().enabled = true;
+    },
+
+    onCollisionEnter: function onCollisionEnter(other, self) {
+        var otherName = other.node.name;
+        if (otherName == 'wall-left' || otherName == 'wall-right') {
+            if (this.xSpeed > 0) {
+                this.xSpeed = -this.xSpeed;
+            } else {
+                this.xSpeed = -this.xSpeed;
+            }
+        }
     },
 
     start: function start() {},
     update: function update(dt) {
-        // console.log(this.accLeft, this.accRight);
         if (this.accLeft) {
             this.xSpeed -= this.acceleration * dt;
         } else if (this.accRight) {

@@ -1,4 +1,3 @@
-
 cc.Class({
     extends: cc.Component,
 
@@ -28,7 +27,22 @@ cc.Class({
         let jumpUp = cc.moveBy(this.jumpDuration, deltaPosUp).easing(cc.easeCubicActionOut());
         let jumpDown = cc.moveBy(this.jumpDuration, deltaPosDown).easing(cc.easeCubicActionIn());
         var callback = cc.callFunc(this.playJumpSound, this);
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
+        let jumpUpForm = cc.scaleTo(0.03, 1, 1.1);
+        let jumpDownForm = cc.scaleTo(0.04, 1, 0.9);
+        let normalForm = cc.scaleTo(0.03, 1, 1);
+        return cc.repeatForever(
+            cc.sequence(
+                jumpUp,
+                jumpUpForm,
+                normalForm,
+                jumpDownForm,
+                jumpDown,
+                jumpDownForm,
+                normalForm,
+                jumpUpForm,
+                callback
+            )
+        );
     },
 
     playJumpSound: function () {
@@ -39,11 +53,10 @@ cc.Class({
         var self = this;
 
         this.joyStick.on('VirtualStick', function (event) {
-            // console.log(event.detail.moveVector.x);
             if (event.detail.moveVector.x < 0) {
                 self.accLeft = true;
                 self.accRight = false;
-            } else if (event.detail.moveVector.x > 0){
+            } else if (event.detail.moveVector.x > 0) {
                 self.accLeft = false;
                 self.accRight = true;
             } else {
@@ -64,6 +77,20 @@ cc.Class({
         this.xSpeed = 0;
 
         this.setInputControl();
+
+        //试验碰撞
+        cc.director.getCollisionManager().enabled = true;
+    },
+
+    onCollisionEnter: function (other, self) {
+        var otherName = other.node.name;
+        if (otherName == 'wall-left' || otherName == 'wall-right') {
+            if (this.xSpeed > 0) {
+                this.xSpeed = -this.xSpeed;
+            } else {
+                this.xSpeed = -this.xSpeed;
+            }
+        }
     },
 
     start() {
@@ -71,7 +98,6 @@ cc.Class({
     },
 
     update(dt) {
-        // console.log(this.accLeft, this.accRight);
         if (this.accLeft) {
             this.xSpeed -= this.acceleration * dt;
         } else if (this.accRight) {

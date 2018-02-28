@@ -4,12 +4,22 @@ cc.Class({
 
     properties: {
         pickRadius: 0,
+
+        plusOne: {
+            type: cc.Label,
+            default: null
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+        //试验碰撞
+        cc.director.getCollisionManager().enabled = true;
+    },
 
+    onCollisionEnter: function (other, self) {
+        this.onPicked();
     },
 
     getPlayerDistance: function () {
@@ -29,12 +39,9 @@ cc.Class({
     },
 
     update(dt) {
-        if (this.getPlayerDistance() < this.pickRadius) {
-            this.onPicked();
-            return;
-        }
         var opacityRatio = 1 - this.game.timer / this.game.starDuration;
-        var minOpacity = 50;
+        var minOpacity = 1;
         this.node.opacity = minOpacity + Math.floor(opacityRatio * (255 - minOpacity));
+        this.game.progressBar.progress = (this.node.opacity- 1) / 255 ;
     },
 });
